@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an Axios instance with the base URL and interceptors to attach the token
 const instance = axios.create({
-    baseURL: 'http://localhost:4000/api/v1'
+    baseURL: 'https://expense-tracker-backend-7f0o.onrender.com/api/v1'
 });
 
 // Add a request interceptor to attach the token to each request

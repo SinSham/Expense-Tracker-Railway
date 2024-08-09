@@ -11,7 +11,7 @@ const Signup = ({ setAuth }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/api/signup', { username, password });
+      const response = await axios.post('https://expense-tracker-backend-7f0o.onrender.com/api/signup', { username, password });
       localStorage.setItem('token', response.data.token);
       setAuth(true);
       navigate('/');
