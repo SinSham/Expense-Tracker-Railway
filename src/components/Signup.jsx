@@ -11,7 +11,7 @@ const Signup = ({ setAuth }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://expense-tracker-backend-qbyslc8gz-sinshams-projects.vercel.app/api/signup', { username, password });
+      const response = await axios.post('https://expense-tracker-backend-production-7f50.up.railway.app/api/signup', { username, password });
       localStorage.setItem('token', response.data.token);
       setAuth(true);
       navigate('/');
